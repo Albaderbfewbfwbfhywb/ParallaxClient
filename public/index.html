@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Scroll Parralax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+
+    <link rel="stylesheet" href="dist/styles/main.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
+    <script>
+        window.REACT_APP_API_BASE_URL = 'http://localhost:3030';
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144274538-1');
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <div class="o-scroll" id="js-scroll" data-scroll-container>
+        <div data-scroll-section>
+            <div class="o-container">
+                <header class="c-header" id="header">
+                    <h1 class="c-header_title o-h1" data-scroll>
+                        <span class="c-header_title_line">
+                            <span class="dashboard-title" data-scroll data-scroll-speed="3"
+                                data-scroll-position="top">Attractive</span>
+                        </span>
+                        <span class="c-header_title_line">
+                            <span class="dashboard-title" data-scroll data-scroll-speed="2"
+                                data-scroll-position="top">Rapt</span>
+                        </span>
+                        <span class="c-header_title_line -version u-white">
+                            <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                data-scroll-delay="0.05">P</span><span class="o-h1" data-scroll data-scroll-speed="5"
+                                data-scroll-position="top" data-scroll-delay="0.05">r</span><span class="o-h1"
+                                data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                data-scroll-delay="0.05">o</span><span class="o-h1" data-scroll data-scroll-speed="4"
+                                data-scroll-position="top" data-scroll-delay="0.05">f</span><span class="o-h1"
+                                data-scroll data-scroll-speed="6" data-scroll-position="top"
+                                data-scroll-delay="0.1">i</span><span class="o-h1" data-scroll data-scroll-speed="3"
+                                data-scroll-position="top" data-scroll-delay="0.07">L</span><span class="o-h1"
+                                data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                data-scroll-delay="0.03">E</span><span class="o-h1" data-scroll data-scroll-speed="5"
+                                data-scroll-position="top" data-scroll-delay="0.07">S</span>
+                        </span>
+                    </h1>
+
+                </header>
+            </div>
+        </div>
+
+        <!-- <section data-scroll-section>
+            <div class="group-wrapper">
+                <div class="c-summary" data-scroll>
+                    <div class="o-layout -gutter">
+                        <ul class="c-summary_list">
+                            <li class="dashboard-subtitle u-label" data-scroll>
+                                <a href="#speed-control" data-scroll-to>
+                                    People Group
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="o-container">
+                        <div class="d-flex justify-content-between">
+                            <div class="profile-card">
+                                <img src="/assets/img/image_1.webp" alt="img_person" />
+                                <div class="profile-info-wrapper">
+                                    <h3>Johny Walkin</h3>
+                                    <p>Senior Full Stack developer</p>
+                                </div>
+                            </div>
+                            <div class="profile-card">2</div>
+                            <div class="profile-card">3</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="profile-card">4</div>
+                            <div class="profile-card">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="c-section" data-scroll-section>
+            <div class="o-container" id="speed-control">
+                <div class="o-layout -gutter">
+                    <div class="o-layout_item">
+                        <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                            <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                data-scroll-repeat>
+                                <div class="o-image" data-scroll>
+                                    <div id="img-dashboard-profile0"></div>
+
+                                </div>
+                            </div>
+
+                            <span id="profile-name0" class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                Name Jola Anastasia
+                            </span>
+
+                            <span class="d-flex justify-content-center c-lerp-block_title" data-scroll
+                                data-scroll-delay="0.1" data-scroll-speed="6">
+                                <span>
+                                    <div id="tb_transactions0" class="tb_transactions"></div>
+                                </span>
+                            </span>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="o-layout -gutter">
+                        <div class="o-layout_item">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="6">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                    data-scroll-repeat>
+                                    <div class="o-image" data-scroll data-scroll-speed="-2">
+                                        <div id="img-dashboard-profile1"></div>
+                                    </div>
+                                </div>
+                                <span id="profile-name1" class="c-speed-block_bubble" data-scroll data-scroll-speed="6"
+                                    data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    Name Paul
+                                </span>
+
+                                <span class="d-flex justify-content-center c-lerp-block_title" data-scroll
+                                    data-scroll-delay="0.1" data-scroll-speed="6">
+                                    <span>
+                                        <div id="tb_transactions1" class="tb_transactions"></div>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="c-section -fixed" data-scroll-section data-persistent>
+            <div class="o-container" id="fixed-elements">
+                <div class="o-layout">
+                    <div class="o-layout_item u-3/5@from-medium">
+                        <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                            data-scroll-repeat>
+                            <div class="c-fixed_target" id="fixed-target"></div>
+                            <div id="img-dashboard-profile2"></div>
+                        </div>
+                        <span id="profile-name2" class="c-speed-block_bubble c-speed-online" data-scroll
+                            data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                            Name Paul
+                        </span>
+
+                        <span class="d-flex justify-content-center c-lerp-block_title" data-scroll
+                            data-scroll-delay="0.1" data-scroll-speed="6">
+                            <span>
+                                <div id="tb_transactions2" class="tb_transactions"></div>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-scroll-section>
+            <div class="c-choochoo">
+                <div class="c-choochoo_item u-text-center" data-scroll data-scroll-direction="horizontal"
+                    data-scroll-speed="10">
+                    <span>
+                        <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                            <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                data-scroll-repeat>
+                                <div class="o-image" data-scroll>
+                                    <div id="img-dashboard-profile3"></div>
+                                </div>
+                            </div>
+                            <span id="profile-name3" class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                Name Jola Anastasia
+                            </span>
+
+                            <span class="d-flex justify-content-center c-lerp-block_title" data-scroll
+                                data-scroll-delay="0.1" data-scroll-speed="6">
+                                <span>
+                                    <div id="tb_transactions3" class="tb_transactions"></div>
+                                </span>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+                <div class="c-choochoo_item u-text-center -reverse" data-scroll data-scroll-direction="horizontal"
+                    data-scroll-speed="-10">
+                    <span>
+                        <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                            <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                data-scroll-repeat>
+                                <div class="o-image" data-scroll>
+                                    <div id="img-dashboard-profile4"></div>
+                                </div>
+                            </div>
+                            <span id="profile-name4" class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                Name Jola Anastasia
+                            </span>
+
+                            <span class="d-flex justify-content-center c-lerp-block_title" data-scroll
+                                data-scroll-delay="0.1" data-scroll-speed="6">
+                                <span>
+                                    <div id="tb_transactions4" class="tb_transactions"></div>
+                                </span>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="c-section" data-scroll-section>
+            <div class="o-container" id="scroll-direction">
+                <div class="c-direction-block_wrapper">
+                    <div class="c-direction-block" id="direction">
+                        <div class="c-direction-block_item -one">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="6" data-scroll-target="#direction">
+                                ATTRACTIVE RAPT PROFILES
+                            </span>
+                        </div>
+                        <div class="c-direction-block_item -two">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="-8" data-scroll-target="#direction">
+                                ATTRACTIVE RAPT PROFILES
+                            </span>
+                        </div>
+                        <div class="c-direction-block_item -three">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="9" data-scroll-target="#direction" data-scroll-delay="0.05">
+                                ATTRACTIVE RAPT PROFILES
+                            </span>
+                        </div>
+                        <div class="c-direction-block_item -four">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="15" data-scroll-target="#direction">
+                                ATTRACTIVE RAPT PROFILES
+                            </span>
+                        </div>
+                        <div class="c-direction-block_item -five">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
+                                ATTRACTIVE RAPT PROFILES
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="font-size: 2.5rem; bottom:0;color: white; text-align:center">
+                xxxx.com 2024
+            </div>
+        </section>
+
+
+    </div>
+
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+        crossorigin="anonymous"></script>
+    <script nomodule
+        src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+        crossorigin="anonymous"></script>
+
+    <script src="dist/scripts/main.js"></script>
+    <script src="dist/scripts/dashboard.js"></script>
+</body>
+
+</html>
